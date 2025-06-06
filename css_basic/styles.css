@@ -1,11 +1,13 @@
 .works_on_smartphone {
   display: flex;
   flex-direction: column;
+  background-color: rgb(155, 157, 159);
 }
 .main {
   display: flex;
   flex-direction: row;
   flex: auto;
+  color: black;
 }
 .article {
   flex: 2;
@@ -14,4 +16,30 @@
 .aside {
   flex: 1;
   overflow-y: auto;
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(100, 100, 100);
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  list-style-type: none;
+  padding: 0;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(100, 100, 100);
 }
