@@ -1,0 +1,78 @@
+/* ===== CSS VARIABLES (Like a color palette for artists) ===== */
+:root {
+  --primary-purple: #c271ff;
+  --secondary-purple: #932aff;
+  --dark-bg: #071629;
+  --light-text: #ffffff;
+  --gray-text: #8c8c8c;
+  --card-bg: #ffffff;
+  --gradient-main: linear-gradient(135deg, #c271ff 0%, #932aff 100%);
+  --gradient-hero: linear-gradient(
+    135deg,
+    rgba(7, 22, 41, 0.8) 0%,
+    rgba(100, 24, 181, 0.8) 100%
+  );
+}
+
+/* =====  BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--light-text);
+  overflow-x: hidden;
+}
+
+/* ===== HEADER SECTION ===== */
+.header {
+  background: var(--dark-bg);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-purple);
+}
